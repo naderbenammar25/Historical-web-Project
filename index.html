@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mokawama-Accueil</title>
+    <link rel="icon" type="image/x-icon" href="favicon.jpg">
+    <link rel="stylesheet" href="styleindex.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
+    <script defer src="animationindex.js"></script>
+    <script src="https://js.stripe.com/v3/"></script>
+    
+</head>
+<body>
+    <header>
+    <div class="titre">
+        <h1><center>المقاومة</center></h1>
+    </div>
+        <div class="logo">
+        <img id="logo"  src="images/palestine-unscreen.gif" alt="palestine">
+        </div>
+    
+        <nav class="navbar">
+            <ul>
+                <li> <a href="1917.html">Déclaration de Balfour (1917)</a></li>
+                <li> <a href="1947.html">Partition de l'ONU(1947)</a></li>
+                <li> <a href="1948.html">Nakba (1948)</a></li>
+                <li> <a href="2008_2014.html">Guerre de Gaza (2008-2009, 2012, 2014)</a></li>
+                <li> <a href ="2023.html"> La guerre Israël-Hamas de 2023</a></li>
+            </ul>
+            
+        </nav>
+        
+        
+        
+    </header>
+
+
+    <div class="resized_bg">
+        <img src="images/event.jpg" alt="Gaza">
+        </div>
+        <main>
+            <a href="dist/index.html" target="_blank"><button class="don">faire un don</button></a>
+            <div class="slider-container">
+                <div class="slides">
+                <div class="slide">
+                    <img src="images/slider1.jpg" alt="Image 1">
+                </div>
+                <div class="slide">
+                    <img src="images/slider2.jpg" alt="Image 2">
+                </div>
+                <div class="slide">
+                    <img src="images/slider3.jpg" alt="Image 3">
+                </div>
+                
+                </div>
+            
+                <button class="prev" onclick="prevSlide()">&#10094;</button>
+                <button class="next" onclick="nextSlide()">&#10095;</button>
+            </div>
+        <section>
+            
+            <article>
+                <br><br><br><br>
+                <div class="p_container">
+                <h2>Comprendre le Conflit palestino-israélien</h2>
+            
+                <p class="tilting-card">Bienvenue sur "المقاومة": Une invitation à explorer les moments clés du conflit palestino-israélien,<br>
+                     depuis les débuts du mouvement sioniste jusqu'aux développements contemporains en 2023.<br>
+                      Notre site propose une perspective exhaustive pour approfondir votre compréhension de cette<br>
+                       histoire complexe. Plongez dans cette chronologie du conflit palestino-israélien sur "المقاومة": De <br>
+                       1897 à 2023, et découvrez les nuances et les évolutions qui ont marqué cette trajectoire historique.</p>
+                    </div>
+        </article>
+        </section>
+        <section>
+            <div class="table-container">
+            <table border="1">
+                <caption class="titre_tab">Chronologie du Conflit palestino-israélien</caption>
+                <tr>
+                    <td>Date</td>
+                    <td><a href="index.html">Événement Historique </a></td>
+                </tr>
+                <tr>
+                    <td>1917</td>
+                    <td>Déclaration de Balfour<a href="1917.html"> (en savoir plus)</a></td>
+                </tr>
+                <tr>
+                    <td>1947</td>
+                    <td>Partition de l'ONU <a href="1947.html">(en savoir plus)</a></td>
+                </tr>
+                <tr>
+                    <td>1948</td>
+                    <td>Nakba <a href="1948.html">(en savoir plus)</a></td>
+                </tr>
+                <tr>
+                <td>2008_2014</td>
+                <td>Guerre de Gaza <a href="2008_2014.html">(en savoir plus)</a></td>
+                </tr>
+                <tr>
+                    <td>2023</td>
+                    <td>La guerre Israël-Hamas de 2023 <a href="2023.html">(en savoir plus)</a></td>
+                </tr>
+            </table>
+        </div>
+        </section>
+        <button id="back-to-top-btn"><img src="images/backtop.png" width="150" ></button>
+        
+        <div class="lang-container">
+            <div class="lang-toggle" id="langToggle" onmouseover="toggleDropdown()">
+                Choisir la langue
+            </div>
+        
+            <div class="lang-dropdown" id="langDropdown">
+                <a href="index.html" class="lang-button">
+                    <img src="https://cdn2.iconfinder.com/data/icons/world-flag-icons/128/Flag_of_France.png" class="lang-flag" alt="France Flag">
+                    <span class="lang-text">Français</span>
+                </a>
+        
+                <a href="indexen.html" class="lang-button">
+                    <img src="https://cdn2.iconfinder.com/data/icons/world-flag-icons/128/Flag_of_United_Kingdom.png" class="lang-flag" alt="UK Flag">
+                    <span class="lang-text">English</span>
+                </a>
+        
+                <a href="indexesp.html" class="lang-button">
+                    <img src="https://cdn2.iconfinder.com/data/icons/world-flag-icons/128/Flag_of_Spain.png" class="lang-flag" alt="Spain Flag">
+                    <span class="lang-text">Español</span>
+                </a>
+        
+                <a href="indexit.html" class="lang-button">
+                    <img src="https://cdn2.iconfinder.com/data/icons/world-flag-icons/128/Flag_of_Italy.png" class="lang-flag" alt="Italy Flag">
+                    <span class="lang-text">Italiano</span>
+                </a>
+        
+                <a href="indexar.html" class="lang-button">
+                    <img src="https://cdn2.iconfinder.com/data/icons/world-flag-icons/128/Flag_of_Saudi_Arabia.png" class="lang-flag" alt="Saudi Arabia Flag">
+                    <span class="lang-text">العربية</span>
+                </a>
+            </div>
+        </div> 
+        
+    </main>
+        <footer>
+            <h2>les associations et les organisations ayant soutenu la cause palestinienne</h2>
+            <a href="https://www.croissant-rouge.tn/" target="_blank"> Croissant Rouge</a>
+            <a href="https://european-union.europa.eu/index_fr" target="_blank">Union Européenne (UE) </a>
+            <a href="https://www.un.org/fr/" target="balnk">Nations Unies(ONU)</a>
+        </footer>
+    
+</body>
+</html>
